@@ -62,7 +62,14 @@ function repeatedString(s, n) {
 
     return totalCount
 
+    /** This function takes in a string s to repeat and the number of characters n to consider. It first counts the occurrences of 'a' in the original string s. Then, it calculates the number of times the whole string repeats in the first n characters and counts the occurrences of 'a' in the remaining characters. Finally, it returns the total count of 'a' in the substring of length n.*/
+
 }
+
+// Example usage:
+const s = "aba";
+const n = 10;
+console.log(repeatedString(s, n)); // Output should be 7
 
 function main() {
     const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
